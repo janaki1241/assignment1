@@ -29,23 +29,23 @@ else return 0;});
 document.writeln("SORT BY NAME"+"<br>");
 for(var i=0;i<5;i++)
 {
-  document.writeln(names[i].name+"<br>");
+  document.writeln("<br>"+names[i].name+"<br>");
 }
 function displayTotal(){
 
 for(var i=0;i<5;i++)
 {
-   document.writeln(names[i].name+" \t\t"+names[i].total+"\t\t"+"<br>");
+   document.writeln(names[i].name+" \t\t\t\t"+names[i].total+"\t\t\t\t"+"<br>");
 }
 }
 function displayAverage(){
 
 for(var i=0;i<5;i++)
 {
-   document.writeln(names[i].name+" \t\t"+names[i].average+"\t\t"+"<br>");
+   document.writeln(names[i].name+" \t\t\t\t"+names[i].average+"\t\t\t\t"+"<br>");
 }
 }
-document.writeln("SORTING BASED ON TOTAL"+"<br>");
+document.writeln("<br>SORTING BASED ON TOTAL<br>");
 names.sort(function(a,b){return b.total-a.total;});
 displayTotal();
 document.writeln("SORTING BASED ON AVERAGE"+"<br>");
